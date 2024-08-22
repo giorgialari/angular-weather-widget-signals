@@ -18,22 +18,22 @@ body {
     255,
     255,
     0.2
-  ); /* Colore semi-trasparente per l'effetto vetro */
+  ); 
   border-radius: 20px;
   padding: 20px;
   width: 320px;
   text-align: center;
   color: #fff;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(10px); /* Effetto sfocato */
-  -webkit-backdrop-filter: blur(10px); /* Supporto per Safari */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Bordo leggero per l'effetto vetro */
+  backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  margin: 10px; /* Add some margin to ensure it's not too close to the edges on small screens */
 }
 
 .header-main,
 .additional-details {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tre colonne di larghezza uguale */
+  grid-template-columns: repeat(3, 1fr); 
   align-items: center;
   margin-bottom: 10px;
 }
@@ -57,13 +57,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .detail-item img {
-  width: 25px;
-  height: 25px;
-  margin-right: 8px; /* Spaziatura tra l'icona e il testo */
+  width: 35px;
+  height: 35px;
+  margin-right: 8px; 
 }
 
 .detail-item p {
@@ -93,25 +93,25 @@ body {
 .city-select-container {
   position: relative;
   width: 100%;
-  max-width: 250px; /* Regola questa dimensione come preferisci */
-  margin: 5px auto 15px; /* Centra la select */
+  max-width: 250px; 
+  margin: 5px auto 15px; 
 }
 
 .city-select {
   width: 100%;
   padding: 10px;
-  padding-right: 40px; /* Spazio per la freccia */
-  font-size: 18px; /* Dimensione del testo */
-  font-weight: bold; /* Testo in grassetto */
+  padding-right: 40px; 
+  font-size: 18px; 
+  font-weight: bold; 
   text-align: center;
   color: #333;
-  background-color: transparent; /* Sfondo trasparente */
+  background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Solo linea sotto */
-  outline: none; /* Rimuove il contorno di focus */
-  -webkit-appearance: none; /* Rimuove lo stile predefinito */
-  -moz-appearance: none; /* Rimuove lo stile predefinito */
-  appearance: none; /* Rimuove lo stile predefinito */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); 
+  outline: none; 
+  -webkit-appearance: none; 
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .city-select-container .select-arrow {
@@ -124,14 +124,14 @@ body {
   pointer-events: none;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
-  border-top: 6px solid #333; /* Colore del triangolo */
+  border-top: 6px solid #333;
   transform: translateY(-50%);
 }
 
 .city-select option {
-  background-color: #87cefa; /* Colore di sfondo azzurro per la dropdown */
-  color: #000; /* Colore del testo all'interno della dropdown */
-  border-radius: 8px; /* Contorni smussati */
+  background-color: #87cefa; 
+  color: #000; 
+  border-radius: 8px; 
   padding: 10px;
 }
 
@@ -141,5 +141,44 @@ body {
     255,
     255,
     0.8
-  ); /* Colore della linea sotto quando è in focus */
+  ); 
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .weather-card {
+    padding: 15px; 
+  }
+
+  .temperature {
+    font-size: 28px; 
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .detail-item img {
+    width: 30px; 
+    height: 30px;
+  }
+
+  .hourly-forecast {
+    flex-direction: row; 
+    align-items: center;
+  }
+
+  .forecast-item {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+
+  .city-select-container {
+    max-width: 90%; 
+    padding: 0 10px; 
+  }
+
+  .city-select {
+    font-size: 16px; 
+  }
 }

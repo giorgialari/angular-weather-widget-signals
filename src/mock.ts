@@ -10,7 +10,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '06:44',
       sunset: '17:59',
       additionalDetails: {
-        humidity: '63%',
+        humidity: '63',
         windForce: '3',
         uvIndex: '5',
       },
@@ -169,7 +169,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '06:30',
       sunset: '18:45',
       additionalDetails: {
-        humidity: '70%',
+        humidity: '70',
         windForce: '4',
         uvIndex: '3',
       },
@@ -328,7 +328,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '06:15',
       sunset: '19:00',
       additionalDetails: {
-        humidity: '50%',
+        humidity: '50',
         windForce: '2',
         uvIndex: '7',
       },
@@ -487,7 +487,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '07:00',
       sunset: '18:30',
       additionalDetails: {
-        humidity: '85%',
+        humidity: '85',
         windForce: '5',
         uvIndex: '2',
       },
@@ -646,7 +646,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '05:50',
       sunset: '18:20',
       additionalDetails: {
-        humidity: '60%',
+        humidity: '60',
         windForce: '4',
         uvIndex: '6',
       },
@@ -805,7 +805,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '06:50',
       sunset: '18:40',
       additionalDetails: {
-        humidity: '68%',
+        humidity: '68',
         windForce: '3',
         uvIndex: '4',
       },
@@ -964,7 +964,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '05:45',
       sunset: '19:15',
       additionalDetails: {
-        humidity: '55%',
+        humidity: '55',
         windForce: '3',
         uvIndex: '8',
       },
@@ -1123,7 +1123,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '06:00',
       sunset: '18:30',
       additionalDetails: {
-        humidity: '40%',
+        humidity: '40',
         windForce: '2',
         uvIndex: '9',
       },
@@ -1282,7 +1282,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '07:30',
       sunset: '17:45',
       additionalDetails: {
-        humidity: '75%',
+        humidity: '75',
         windForce: '5',
         uvIndex: '2',
       },
@@ -1441,7 +1441,7 @@ export const WeatherData: CitiesResponse = {
       sunrise: '05:30',
       sunset: '18:15',
       additionalDetails: {
-        humidity: '70%',
+        humidity: '70',
         windForce: '3',
         uvIndex: '7',
       },

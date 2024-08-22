@@ -24,10 +24,10 @@ export class WeatherService {
         const forecastHour = parseInt(forecast.time.split(':')[0], 10);
         return forecastHour >= currentHour;
       })
-      .slice(0, 6);
+      .slice(0, 5);
 
-    if (nextFiveHoursForecast.length < 6) {
-      const remainingHours = 6 - nextFiveHoursForecast.length;
+    if (nextFiveHoursForecast.length < 5) {
+      const remainingHours = 5 - nextFiveHoursForecast.length;
       nextFiveHoursForecast.push(
         ...cityWeather.hourlyForecast.slice(0, remainingHours)
       );
