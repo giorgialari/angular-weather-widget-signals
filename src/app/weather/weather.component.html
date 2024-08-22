@@ -1,0 +1,61 @@
+<div class="weather-card">
+  <div class="city-select-container">
+    <select
+      class="city-select"
+      #citySelect
+      (change)="setCitySelected(citySelect.value)"
+    >
+      @for(city of cities(); track city.id){
+      <option [value]="city.id" [selected]="city.id === 2">
+        {{ city.city }}
+      </option>
+      }
+    </select>
+    <div class="select-arrow"></div>
+  </div>
+
+  @if(city()){
+  <div class="header-main">
+    <div class="detail-item sunrise">
+      <img src="../../assets/sunrise.png" alt="Sunrise" />
+      <p>{{ city().sunrise }}</p>
+    </div>
+
+    <div class="city-info">
+      <div class="temperature">{{ city().temperature }}°C</div>
+      <div class="description">{{ city().description }}</div>
+    </div>
+
+    <div class="detail-item sunset">
+      <img src="../../assets/sunset.png" alt="Sunset" />
+      <p>{{ city().sunset }}</p>
+    </div>
+  </div>
+
+  <div class="additional-details">
+    <div class="detail-item">
+      <img src="../../assets/humidity.png" alt="Humidity" />
+      <p>{{ city().additionalDetails.humidity }}%</p>
+    </div>
+    <div class="detail-item">
+      <img src="../../assets/wind.png" alt="Wind Force" />
+      <p>{{ city().additionalDetails.windForce }}</p>
+    </div>
+    <div class="detail-item">
+      <img src="../../assets/uv.png" alt="UV Index" />
+      <p>{{ city().additionalDetails.uvIndex }}</p>
+    </div>
+  </div>
+
+  <div class="hourly-forecast">
+    @for(hourlyForecast of nextFiveForecasts; track hourlyForecast.time){
+    <div class="forecast-item">
+      <p>{{ hourlyForecast.time }}</p>
+      <img src="../../assets/clear_night.png" alt="Clear Night" />
+      <p>{{ hourlyForecast.temperature }}°C</p>
+    </div>
+
+    }
+  </div>
+  }
+</div>
