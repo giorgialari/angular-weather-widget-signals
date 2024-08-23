@@ -172,13 +172,4 @@ body {
     width: 100%; 
     margin-bottom: 10px; 
   }
-
-  .city-select-container {
-    max-width: 90%; 
-    padding: 0 10px; 
-  }
-
-  .city-select {
-    font-size: 16px; 
-  }
 }
