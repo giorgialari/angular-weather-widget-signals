@@ -50,7 +50,4 @@ You can customize the mocked data and the design of the widget according to your
 - **Mock Data**: Located in the `src/mock` directory. Modify this data to change the cities and weather conditions displayed in the widget.
 - **Styling**: The CSS styles are located in the `src/global_styles.css` file. You can adjust the styles to match your preferred design.
 
-## License
-
-This project is open-source and available under the [MIT License](LICENSE).
 
